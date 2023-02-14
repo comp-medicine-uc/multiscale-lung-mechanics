@@ -17,27 +17,7 @@ The mechanical behavior of the lungs has long been associated with the structura
 
 ## Results
 
-The main results of this research are shown below. Figure 3 shows the airway pressure, flow and volume signals predicted by the poroelastic model of the
-lung during PCV simulations. 
-
-
-<!---
-your comment goes here
-and here
-<figure>
-  <p align="center">
-<img src="results-data/jacpres.png"  height="80%" width="80%" alt="Alt text" title="Optional title">
-<figcaption align = "center"><b> Figure 3. Simulation of lungs under pressure-controlled mechanical ventilation. Physiological signals that
-describe the time evolution of airway pressure (top), flow (middle), and volume (bottom) are shown for all
-constitutive models considered in this work. $\protect\overrightarrow{CM}$ t1; t2; and t3 represent the time instants for peak flow, peak
-volume, and half expiratory time, respectively.</b></figcaption>
-</p>
-</figure>
--->
-
-
-
-
+The main results of this research are shown below. The spatiotemporal evolution of the jacobian and the alveolar pressure fields for the VCV baseline case are shown in Figure 3. We report three key time instants observed in a VCV mode cycle: the end of inspiration ($t_1=1.0$ s), the end of the inspiratory pause ($t_2=1.25$ s), and when half expiration has elapsed ($t_3= 2.25$ s).
 
 
 
@@ -46,13 +26,24 @@ volume, and half expiratory time, respectively.</b></figcaption>
 <img src="results-data/jacpres.png"  height="100%" width="100%">
 </p>
 </figure>
-Figure 3. Simulation of lungs under pressure-controlled mechanical ventilation. Physiological signals that
-describe the time evolution of airway pressure (top), flow (middle), and volume (bottom) are shown for all
-constitutive models considered in this work. $t_1$; $t_2$; and $t_3$ represent the time instants for peak flow, peak
-volume, and half expiratory time, respectively 
+Figure 3. Temporal evolution during one respiratory cycle of volume-controlled
+mechanical ventilation in the baseline case: (a) jacobian field, and (b) alveolar pressure field. Fields are plotted on the current configuration.
+<br/><br/><br/><br/>
+
+Figure 4 shows the spatiotemporal evolution of the hydrostatic stress and material porosity change fields. 
+<figure>
+<p align="center">
+<img src="results-data/hydpor.png"  height="50%" width="50%">
+</p>
+</figure>
+Figure 4. Temporal evolution during one respiratory cycle of volume-controlled
+mechanical ventilation in the  baseline case: (a) hydrostatic stress field, and (b) material porosity change field. Fields are plotted on the current configuration
 <br/><br/><br/><br/>
 
 
+
+
+-------
 
 The respiratory system compliance and resistance for the five constitutive models studied
 obtained from fitting the equation of motion to the PCV finite-element simulations are reported in Table 2. 
