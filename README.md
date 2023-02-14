@@ -8,7 +8,7 @@ _[@comp-medicine-uc](https://github.com/comp-medicine-uc)_
 
 
 
-%Numerical simulations of lung clinical applications using a large strain poroelastic model: pressure-controlled ventilation (PCV), volume-controlled ventilation (VCV) and supersyringe method
+Multiscale poroelastic lung model: influence of microstructural parameters on pulmonary function. 
 
 ## Abstract
 
