@@ -1,12 +1,13 @@
 # Tests files
 
-( Files that implement a numerical simulation or test. These files are typically Jupyter notebooks (`.ipynb`). Include an overall descripction here. Use subfolders if neccesary. ***Source files / libraries DO NOT go here!*** )
+Files that implement a numerical simulation or test. 
 
 
 ## Files
 
 (List all files, including a brief description - see template below.)
+- `main00-GenerateMesh`: Construct the lung mesh.
+- `main01-PCV.ipynb`: Numerical simulation of PCV mechanical ventilation.
+- `main02-VCV.ipynb`: Numerical simulation of VCV mechanical ventilation.
+- `main03-Supersyringe`: Numerical simulation of Supersyringe experiment.
 
-- `test01-consistency.ipynb`: Numerical test of tangent operator consistency.
-- `test02-square.ipynb`: Numerical simulation of tissue mechanics on a square domain with prescribed displacements on the boundary.
-- `test03-lung.ipynb`: Numerical simulation of tissue mechanics on a anatomical lung domain with prescribed tractions on the boundary.
