@@ -26,7 +26,7 @@ your comment goes here
 and here
 <figure>
   <p align="center">
-<img src="results-data/jacpres-1.png"  height="80%" width="80%" alt="Alt text" title="Optional title">
+<img src="results-data/jacpres.png"  height="80%" width="80%" alt="Alt text" title="Optional title">
 <figcaption align = "center"><b> Figure 3. Simulation of lungs under pressure-controlled mechanical ventilation. Physiological signals that
 describe the time evolution of airway pressure (top), flow (middle), and volume (bottom) are shown for all
 constitutive models considered in this work. $\protect\overrightarrow{CM}$ t1; t2; and t3 represent the time instants for peak flow, peak
