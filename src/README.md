@@ -1,12 +1,9 @@
 # Source files
 
-( Files that implement libraries and functions used in simulations. Include an overall descripction here. Use subfolders if neccesary. ***Main/test files DO NOT go here!*** )
+Folder and files that implement libraries and functions used in simulations
 
+## Folders
+- `Meshing`: Mesh generation
 ## Files
-
-(List all files, including a brief description - see template below.)
-
-- `boundaries.py`: Boundary definition for geometries
-- `model.py`: Class for numerical model
-- `params.py`: Parameter definition
-- `mesh_gen.py`: Mesh generation
+- `modelfunctions.py`: Python Classes and Functions for PCV, VCV mechanical ventilation and supersyringe simulation
+- `userTKD.py` : : Python Classes and Functions for the micromechanical (TKD) model
