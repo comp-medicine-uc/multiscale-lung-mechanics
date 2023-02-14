@@ -43,7 +43,7 @@ volume, and half expiratory time, respectively.</b></figcaption>
 
 <figure>
 <p align="center">
-<img src="results-data/fig03_plotPCV.png"  height="100%" width="100%">
+<img src="results-data/jacpres.png"  height="100%" width="100%">
 </p>
 </figure>
 Figure 3. Simulation of lungs under pressure-controlled mechanical ventilation. Physiological signals that
