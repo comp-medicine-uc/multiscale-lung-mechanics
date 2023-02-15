@@ -76,6 +76,17 @@ To assess the dependence of lung mechanical parameters on microstructural featur
 Figure 7. Parameter sensitivity analysis for the respiratory system compliance: a) influence of variations in the alveolar-wall elasticity $\mu$, and b) influence of variations in the initial alveolar porosity $f_0$. Baseline values of both parameters are indicated with a vertical dashed line. Dotted lines are included to visually assess the degree of non-linearity.
 <br/><br/><br/><br/>
 
+
+The influence of alveolar-wall elasticity and alveolar porosity on the quasi-static lung response is shown in Figure 8(a) and Figure 8(b), respectively.
+
+<figure>
+<p align="center">
+<img src="results-data/SA_super.png"  height="100%" width="100%">
+</p>
+</figure>
+Figure 8. Quasi-static pressure-volume lung curves and parameter sensitivity analysis: a) variations in the alveolar-wall elasticity, and b) variations in the initial alveolar porosity. Dashed lines represent the baseline case. Dotted lines are included to visually assess the degree of non-linearity.
+<br/><br/><br/><br/>
+
 <br/><br/><br/><br/>
 
 ## Directories
