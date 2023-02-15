@@ -111,5 +111,3 @@ Used libraries:
 - `matplotlib`
 - `os`
 - `meshio` 4.4.6
-- `nibabel`
-- `pyvista`
