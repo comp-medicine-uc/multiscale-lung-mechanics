@@ -808,11 +808,7 @@ def regression(folder,name):
 #    "font.serif": ["Palatino"]})
 
 
-#GRAFICOS ANALISIS DE SENSIBILIDAD PARA \fo
-
-
 def plotVCV():
-    print('Sensitibity analysis for f0')
     folder1='/fo0.55_mu10.33s00'
     folder2='/fo0.66_mu10.33s00'
     folder3='/fo0.69_mu10.33s00'
@@ -841,11 +837,11 @@ def plotVCV():
     tnormal,pnormal, qnormal,vnormal=give_tpqv(folder3,name)
     
     
-    fig, axs = plt.subplots(nrows=3, ncols=1)
-    ax1=axs[0]
-    ax2=axs[1]
-    ax3=axs[2]
-    fig.set_size_inches(5, 7)
+    fig, axs = plt.subplots(nrows=3, ncols=2)
+    ax1=axs[0,0]
+    ax2=axs[1,0]
+    ax3=axs[2,0]
+    fig.set_size_inches(2*5, 7)
     
     position='upper right'
     limx=max(tmenos25)
@@ -853,7 +849,9 @@ def plotVCV():
     si=15
     minor_ticks_left=np.linspace(0,6,4)
     
-    
+    ax1=axs[0,1]
+    ax2=axs[1,1]
+    ax3=axs[2,1]
     #ax1.fill_between(tiempos, presiones*10.2, y2=0,color='k',alpha=0.1)
     ax1.fill_between(tmenos25, y1=0, y2=pmenos25*10.2,color=color5,alpha=alpha5+alpha25,label='±$5\%$ ($f_0$)')
     ax1.fill_between(tmenos25, y1=0, y2=pmenos25*10.2,color=color25,alpha=alpha25,label='±$20\%$ ($f_0$)')
@@ -931,16 +929,16 @@ def plotVCV():
     ax3.set_xticklabels([r"$0$", r"$1$", r"$2$", r"$3$"], color="k", size=si)
     ax3.set_ylim(0,0.52)
     plt.tight_layout()     
-    plt.show()
-    plt.savefig('SAfo_vcv.pdf')
+    #plt.show()
+    #plt.savefig('SAfo_vcv.pdf')
     
     
     
     
-    #%GRAFICOS ANALISIS DE SENSIBILIDAD PARA \mu
-    print('---------------------------------------------------------------')
-    print('Sensitibity analysis for \mu')
-
+    ##%GRAFICOS ANALISIS DE SENSIBILIDAD PARA \mu
+    #print('---------------------------------------------------------------')
+    #print('Sensitibity analysis for \mu')
+    
     folder1='/fo0.69_mu8.26s00'
     folder2='/fo0.69_mu9.81s00'
     folder3='/fo0.69_mu10.33s00'
@@ -971,11 +969,11 @@ def plotVCV():
     tnormal,pnormal, qnormal,vnormal=give_tpqv(folder3,name)
     
     
-    fig, axs = plt.subplots(nrows=3, ncols=1)
-    ax1=axs[0]
-    ax2=axs[1]
-    ax3=axs[2]
-    fig.set_size_inches(5, 7)
+    #fig, axs = plt.subplots(nrows=3, ncols=1)
+    ax1=axs[0,0]
+    ax2=axs[1,0]
+    ax3=axs[2,0]
+    #fig.set_size_inches(5, 7)
     
     position='upper right'
     limx=max(tmenos25)
@@ -1061,9 +1059,9 @@ def plotVCV():
     ax3.set_ylim(0,0.52)
     plt.tight_layout()     
     plt.show()
-    plt.savefig('SAmu_vcv.pdf')
+    plt.savefig('SA_vcv.pdf')
     
-    return
+    return 
 
 
 
@@ -1163,7 +1161,6 @@ def plotbaselineVCV():
 
 
 def plotPCV():
-    print('Sensitibity analysis for f0')
     folder1='/fo0.55_mu10.33s00'
     folder2='/fo0.66_mu10.33s00'
     folder3='/fo0.69_mu10.33s00'
@@ -1192,11 +1189,11 @@ def plotPCV():
     tnormal,pnormal, qnormal,vnormal=give_tpqv(folder3,name)
     
     
-    fig, axs = plt.subplots(nrows=3, ncols=1)
-    ax1=axs[0]
-    ax2=axs[1]
-    ax3=axs[2]
-    fig.set_size_inches(5, 7)
+    fig, axs = plt.subplots(nrows=3, ncols=2)
+    ax1=axs[0,1]
+    ax2=axs[1,1]
+    ax3=axs[2,1]
+    fig.set_size_inches(5*2, 7)
     
     position='upper right'
     limx=max(tmenos25)
@@ -1271,15 +1268,8 @@ def plotPCV():
     ax3.set_xticklabels([r"$0$", r"$1$", r"$2$", r"$3$"], color="k", size=si)
     ax3.set_ylim(0,0.55)
     plt.tight_layout()     
-    plt.show()
-    plt.savefig('SAfo_pcv.pdf')
-    
-    
-    #% GRAFICOS ANALISIS DE SENSIBILIDAD PARA \mu
-    print('---------------------------------------------------------------')
-    print('Sensitibity analysis for \mu')
 
-    
+
     folder1='/fo0.69_mu8.26s00'
     folder2='/fo0.69_mu9.81s00'
     folder3='/fo0.69_mu10.33s00'
@@ -1308,11 +1298,9 @@ def plotPCV():
     tnormal,pnormal, qnormal,vnormal=give_tpqv(folder3,name)
     
     
-    fig, axs = plt.subplots(nrows=3, ncols=1)
-    ax1=axs[0]
-    ax2=axs[1]
-    ax3=axs[2]
-    fig.set_size_inches(5, 7)
+    ax1=axs[0,0]
+    ax2=axs[1,0]
+    ax3=axs[2,0]
     
     position='upper right'
     limx=max(tmenos25)
@@ -1387,9 +1375,8 @@ def plotPCV():
     ax3.set_ylim(0,0.55)
     plt.tight_layout()     
     plt.show()
-    plt.savefig('SAmu_pcv.pdf')    
+    plt.savefig('SA_pcv.pdf')    
     return
-
 
 
 
@@ -1484,7 +1471,6 @@ def plotbaselinePCV():
 
 def plotCompliancePCV():
     name='multi'
-    print('Sensitibity analysis for f0')
     folder1='/fo0.55_mu10.33s00'
     folder2='/fo0.66_mu10.33s00'
     folder3='/fo0.69_mu10.33s00'
@@ -1505,10 +1491,10 @@ def plotCompliancePCV():
         Cs.append(C)
         
     
-    fig, axs = plt.subplots(1, 1)
-    fig.set_size_inches(5, 5)
+    fig, axss = plt.subplots(1, 2)
+    fig.set_size_inches(2*5, 5)
     si=15
-    
+    axs=axss[1]
     axs.plot(fos,Cs,color='k')
     #axs.scatter(fos,Cs,color='k')
     
@@ -1527,24 +1513,9 @@ def plotCompliancePCV():
     axs.set_xlim(0.552,0.828)
     axs.set_ylim(75,120)
     axs.axvline(x=0.69,color='k',linestyle='--')
-    
-    #axs.set_xlim(0,400)
-    
-    
-    #axs.legend(shadow=True,loc=position)
-    
     plt.tight_layout()   
-    plt.show()
     
     
-    
-    
-    plt.tight_layout() 
-    plt.savefig('compliance_fo.pdf')
-
-
-    print('---------------------------------------------------------------')
-    print('Sensitibity analysis for \mu')
     folder1='/fo0.69_mu8.26s00'
     folder2='/fo0.69_mu9.81s00'
     folder3='/fo0.69_mu10.33s00'
@@ -1566,9 +1537,7 @@ def plotCompliancePCV():
         Cs.append(C)
         
     
-    fig, axs = plt.subplots(1, 1)
-    fig.set_size_inches(5, 5)
-    si=15
+    axs=axss[0]
     
     axs.plot(mus,Cs,color='k')
     axs.set_ylabel(r'Compliance [ml/cm H$_2$O]', size=si)
@@ -1594,13 +1563,10 @@ def plotCompliancePCV():
     
     plt.tight_layout()   
     plt.show()
-    
-    
-    
-    
-    plt.tight_layout() 
-    plt.savefig('compliance_mu.pdf')    
+    plt.savefig('SA_compliance.pdf')    
     return
+
+
 
 def plotSUPER():
     def give_tpqv(folder,name):
@@ -1621,8 +1587,7 @@ def plotSUPER():
       volumenes=np.concatenate((np.array([0]),np.asarray(volumenes)))
     
       return tiempos,presiones,flujos,volumenes 
-    print('Sensitibity analysis for f0')
-    #% GRAFICOS ANALISIS DE SENSIBILIDAD PARA \fo
+
     folder1='/fo0.55_mu10.33s00'
     folder2='/fo0.66_mu10.33s00'
     folder3='/fo0.69_mu10.33s00'
@@ -1664,9 +1629,9 @@ def plotSUPER():
     im=round(len(vnormal[ls])) #indice medio de ls, para curvas PV inflation
     
     
-    fig, ((ax1)) = plt.subplots(nrows=1, ncols=1)
-    fig.set_size_inches(5, 5.25)
-    
+    fig, axs = plt.subplots(nrows=1, ncols=2)
+    fig.set_size_inches(10, 5.25)
+    ax1=axs[1]
     position='upper left'
     si=15
     #auxiliares para que leged sean en orden 2 y 20, con colores y orden correctos
@@ -1698,16 +1663,9 @@ def plotSUPER():
     
     ax1.plot(10.2*pmas25[ls],vmas25[ls],color=color25,linestyle=style25,alpha=alpha25)
     ax1.plot(10.2*pmenos25[ls],vmenos25[ls],color=color25,linestyle=style25,alpha=alpha25)
-    
-    
     plt.tight_layout()     
-    plt.show()
-    plt.savefig('SAfo_super.pdf')
+
     
-    
-    
-    print('---------------------------------------------------------------')
-    print('Sensitibity analysis for \mu')
     #% GRAFICOS ANALISIS DE SENSIBILIDAD PARA \mu
     folder1='/fo0.69_mu8.26s00'
     folder2='/fo0.69_mu9.81s00'
@@ -1749,10 +1707,8 @@ def plotSUPER():
     ls=ls#+[len(tnormal)-1]  
     im=round(len(vnormal[ls])) #indice medio de ls, para curvas PV inflation
     
-    
-    fig, ((ax1)) = plt.subplots(nrows=1, ncols=1)
-    fig.set_size_inches(5, 5.25)
-    
+
+    ax1=axs[0]    
     position='upper left'
     si=15
     #auxiliares para que leged sean en orden 2 y 20, con colores y orden correctos
@@ -1788,7 +1744,7 @@ def plotSUPER():
     
     plt.tight_layout()     
     plt.show()
-    plt.savefig('SAmu_super.pdf')
+    plt.savefig('SA_super.pdf')
     
     return
 
@@ -1867,3 +1823,8 @@ def plotbaselineSUPER():
     
     
     return
+
+
+
+
+
