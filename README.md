@@ -1,6 +1,7 @@
 # Multiscale modeling of lung mechanics: from alveolar microstructure to pulmonary function
 
 Contact: 
+_[@nbaviles](https://github.com/nbaviles)_
 _[@dehurtado](https://github.com/dehurtado)_
 _[@comp-medicine-uc](https://github.com/comp-medicine-uc)_
 
